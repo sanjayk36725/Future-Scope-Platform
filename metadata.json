@@ -1,0 +1,6 @@
+{
+  "name": "Future Scope Platform",
+  "description": "Enterprise-level AI-powered platform combining Education, Software Development, Recruitment, HR, and Campus Management with routing AI agents.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
