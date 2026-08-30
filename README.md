@@ -1,550 +1,297 @@
-# 🗺️ Full Development Roadmap – Future Scope Platform
+<div align="center">
 
-This roadmap outlines the step-by-step development plan for building a **multi-user platform** connecting students, HR professionals, teachers, and software managers.
+# 🌐 Future Scope Platform
 
----
+### *A unified, AI-powered ecosystem for Students, HR, Teachers & Managers*
 
-## 🚩 Phase 0: Planning & Requirements
+[![Status](https://img.shields.io/badge/status-in%20development-yellow)]()
+[![Frontend](https://img.shields.io/badge/frontend-React%20%2B%20Vite-61DAFB?logo=react&logoColor=black)]()
+[![Backend](https://img.shields.io/badge/backend-FastAPI-009688?logo=fastapi&logoColor=white)]()
+[![Database](https://img.shields.io/badge/database-PostgreSQL-336791?logo=postgresql&logoColor=white)]()
+[![Deployment](https://img.shields.io/badge/deploy-Vercel%20%2B%20Render-black?logo=vercel)]()
+[![License](https://img.shields.io/badge/license-MIT-green)]()
 
-### 🎯 Goals
+*One platform. Four roles. Thirty-six AI agents.*
 
-* Define platform purpose
-* Identify user roles and permissions
-* Finalize core features
-
-### 📋 Tasks
-
-* Requirement analysis
-* UI wireframing (basic design)
-* Choose tech stack (Flask/Django, DB, frontend)
+</div>
 
 ---
 
-## 🚀 Phase 1: Core Setup
+## 📖 Table of Contents
 
-### ⚙️ Backend Setup
-
-* Setup Python environment
-* Create project structure
-* Initialize Flask/Django app
-
-### 🗄️ Database Design
-
-* Users table (role-based)
-* Files/resources table
-* Relationships between users & data
-
-### 📂 Basic Features
-
-* File upload system
-* File access/view system
+- [What Is This?](#-what-is-this)
+- [Core Roles](#-core-roles)
+- [Architecture at a Glance](#-architecture-at-a-glance)
+- [AI Agent Suite](#-ai-agent-suite)
+- [Tech Stack](#-tech-stack)
+- [Roadmap](#-roadmap)
+- [Repository Structure](#-repository-structure)
+- [Getting Started](#-getting-started)
+- [Environment Variables](#-environment-variables)
+- [Deployment](#-deployment)
+- [Security](#-security)
+- [Contributing](#-contributing)
+- [Roadmap Status Tracker](#-roadmap-status-tracker)
 
 ---
 
-## 👥 Phase 2: User Management
+## 🎯 What Is This?
 
-### 🔐 Authentication System
+**Future Scope Platform** connects four kinds of people — **Students**, **HR Professionals**, **Teachers**, and **Software Managers** — inside one role-aware web application, and backs each of them with a dedicated bench of purpose-built AI agents.
 
-* User registration (Student, HR, Teacher, Manager)
-* Login & logout system
-* Password encryption
-
-### 🛂 Authorization
-
-* Role-based access control
-* Restrict features per user type
+> Think of it as a campus + workplace operating system, where every role gets its own dashboard, its own tools, and its own AI copilots.
 
 ---
 
-## 🖥️ Phase 3: Dashboard & UI
+## 👥 Core Roles
 
-### 🎨 Frontend Development
-
-* Create responsive UI (HTML, CSS, JS)
-* Dashboard for each role
-
-### 📊 Role-based Dashboards
-
-* Student dashboard
-* HR dashboard
-* Teacher dashboard
-* Admin/Manager dashboard
+| Role | What They Do | Key Modules |
+|---|---|---|
+| 🎓 **Student** | Learn, submit work, track progress | Tutor Agent, Assignment Helper, Quiz Generator, Placement Prep |
+| 💼 **HR Professional** | Recruit, screen, onboard | Resume Screening, Candidate Matching, Mock Interview Agent |
+| 👩‍🏫 **Teacher** | Guide, evaluate, share knowledge | Coding Mentor, Attendance Analysis, Skill Gap Analysis |
+| 🛠️ **Software Manager** | Oversee code quality & delivery | Code Review, DevOps Agent, GitHub PR Review |
 
 ---
 
-## 📦 Phase 4: Advanced Features
+## 🏗️ Architecture at a Glance
 
-### 🤝 Collaboration
-
-* File sharing between users
-* Comments or feedback system
-
-### 💼 HR Features
-
-* Job posting system
-* Candidate profile viewing
-
-### 🎓 Student Features
-
-* Resource access
-* Progress tracking
-
----
-
-## 🔔 Phase 5: Enhancements
-
-* Notification system (email/in-app)
-* Search and filter functionality
-* Profile management
+```
+                        ┌─────────────────────────┐
+                        │   React + Vite (UI)      │
+                        │  Role-based Dashboards    │
+                        └────────────┬─────────────┘
+                                     │ REST / JWT
+                        ┌────────────▼─────────────┐
+                        │   FastAPI Backend         │
+                        │  Auth · RBAC · Routing    │
+                        └────────────┬─────────────┘
+                 ┌───────────────────┼───────────────────┐
+                 │                   │                    │
+        ┌────────▼────────┐ ┌────────▼────────┐ ┌─────────▼────────┐
+        │  PostgreSQL DB   │ │  AI Agent Layer  │ │  File / Storage   │
+        │  Users · Files   │ │  36 Micro-Agents │ │  Uploads · Docs    │
+        └──────────────────┘ └──────────────────┘ └───────────────────┘
+```
 
 ---
 
-## ☁️ Phase 6: Deployment
+## 🤖 AI Agent Suite
 
-### 🌐 Deployment Steps
+<details>
+<summary><b>🎓 Learning & Career (8 agents)</b></summary>
 
-* Push code to GitHub
-* Deploy using Render
+- Personal Tutor Agent
+- Coding Mentor Agent
+- Assignment Helper Agent
+- Quiz Generator Agent
+- Placement Preparation Agent
+- Resume Review Agent
+- Career Guidance Agent
+- Attendance Analysis Agent
 
-### 🔧 Production Setup
+</details>
 
-* Environment variables
-* Database hosting
-* Static file handling
+<details>
+<summary><b>💻 Software Engineering (8 agents)</b></summary>
+
+- Code Generation Agent
+- Code Review Agent
+- Debugging Agent
+- Unit Test Generator Agent
+- API Documentation Agent
+- SQL Query Agent
+- DevOps Agent
+- GitHub PR Review Agent
+
+</details>
+
+<details>
+<summary><b>💼 HR & Recruitment (6 agents)</b></summary>
+
+- Resume Screening Agent
+- Candidate Matching Agent
+- Mock Interview Agent
+- Skill Gap Analysis Agent
+- Coding Evaluation Agent
+- Communication Assessment Agent
+
+</details>
+
+<details>
+<summary><b>🏢 Workplace Operations (5 agents)</b></summary>
+
+- Employee Onboarding Agent
+- Leave Management Agent
+- Policy Q&A Agent
+- Payroll Support Agent
+- Employee Feedback Agent
+
+</details>
+
+<details>
+<summary><b>🏫 Campus Services (8 agents)</b></summary>
+
+- Student Helpdesk Agent
+- Timetable Assistant
+- Lab Booking Agent
+- Placement Coordinator Agent
+- Event Registration Agent
+- Library Assistant Agent
+- Hostel Management Agent
+- Fee Inquiry Agent
+
+</details>
+
+**Total: 35 specialized agents + 1 general AI Helper = 36 in the roster.**
 
 ---
 
-## 🔐 Phase 7: Security
+## ⚙️ Tech Stack
 
-* Secure authentication (JWT/session)
-* Data validation
-* Prevent SQL injection & XSS
-* Role-based restrictions
-
----
-
-## 📱 Phase 8: Optimization & Scaling
-
-* Improve performance
-* Optimize database queries
-* Add caching
+| Layer | Technology |
+|---|---|
+| Frontend | React + Vite, Tailwind CSS |
+| Backend | Python, FastAPI |
+| Auth | JWT-based session management |
+| Database | PostgreSQL (prod) / SQLite (dev) |
+| Storage | Cloud file storage for uploads |
+| Deployment | Vercel (frontend) · Render (backend) · Docker |
+| Design | Figma |
 
 ---
 
-## 🤖 Phase 9: Future Scope (Advanced)
+## 🗺️ Roadmap
 
-* AI-based job recommendations
-* Resume analysis system
-* Chat system between users
-* Mobile app (Android/iOS)
+```
+Planning ─▶ Frontend ─▶ Backend ─▶ AI Agents ─▶ DB Integration
+   ─▶ API Integration ─▶ Testing ─▶ Deployment
+   ─▶ Accessible on Desktop · Laptop · Tablet · Mobile
+```
 
----
-
-## 🧪 Phase 10: Testing
-
-* Unit testing
-* Integration testing
-* Bug fixing
-
----
-
-## 📈 Phase 11: Maintenance
-
-* Regular updates
-* Feature improvements
-* User feedback integration
-
----
-
-## 🎯 Final Goal
-
-A fully functional **multi-role platform** where:
-
-* Students learn and access resources
-* HRs recruit and post jobs
-* Teachers guide and share knowledge
-* Managers control and monitor the system
+| Phase | Focus |
+|---|---|
+| 0 | Planning & requirement analysis |
+| 1 | Core backend + database setup |
+| 2 | Authentication & role-based access |
+| 3 | Frontend UI & role dashboards |
+| 4 | Collaboration, HR & student features |
+| 5 | Notifications, search, profiles |
+| 6 | Deployment (GitHub → Render) |
+| 7 | Security hardening (JWT, XSS/SQLi prevention) |
+| 8 | Performance & caching |
+| 9 | Future scope — AI recommendations, chat, mobile app |
+| 10 | Testing (unit + integration) |
+| 11 | Maintenance & continuous feedback |
 
 ---
 
-## 🧠 Summary
+## 📁 Repository Structure
 
-Build step-by-step:
-👉 Setup → Users → Features → UI → Deploy → Improve
-
+```
 AI-Agents/
-│
 ├── AI-Helper/
-│   ├── app.py
-│   ├── requirements.txt
-│   ├── .env
-│   └── README.md
-│
 ├── Personal-Tutor-Agent/
-│   ├── app.py
-│   ├── requirements.txt
-│   ├── templates/
-│   ├── static/
-│   └── README.md
-│
 ├── Coding-Mentor-Agent/
-│   ├── app.py
-│   ├── requirements.txt
-│   └── README.md
-│
 ├── Assignment-Helper-Agent/
+├── Quiz-Generator-Agent/
+├── Placement-Preparation-Agent/
+├── Resume-Review-Agent/
+├── Career-Guidance-Agent/
+├── Attendance-Analysis-Agent/
+├── Code-Generation-Agent/
+├── Code-Review-Agent/
+├── Debugging-Agent/
+├── ... (36 agents total, each self-contained)
 │   ├── app.py
-│   ├── uploads/
 │   ├── requirements.txt
 │   └── README.md
-│
-├── Quiz-Generator-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── Placement-Preparation-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── Resume-Review-Agent/
-│   ├── app.py
-│   ├── uploads/
-│   └── requirements.txt
-│
-├── Career-Guidance-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── Attendance-Analysis-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── Code-Generation-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── Code-Review-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── Debugging-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── Unit-Test-Generator-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── API-Documentation-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── SQL-Query-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── DevOps-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── GitHub-PR-Review-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── Resume-Screening-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── Candidate-Matching-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── Mock-Interview-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── Skill-Gap-Analysis-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── Coding-Evaluation-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── Communication-Assessment-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── Employee-Onboarding-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── Leave-Management-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── Policy-QA-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── Payroll-Support-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── Employee-Feedback-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── Student-Helpdesk-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── Timetable-Assistant/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── Lab-Booking-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── Placement-Coordinator-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── Event-Registration-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── Library-Assistant-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── Hostel-Management-Agent/
-│   ├── app.py
-│   └── requirements.txt
-│
-└── Fee-Inquiry-Agent/
-    ├── app.py
-    └── requirements.txt
+```
 
+Each agent is an isolated micro-service with its own `app.py` and `requirements.txt`, so agents can be developed, tested, and deployed independently.
 
-    and this
+---
 
-    Phase 1
-│
-├── Project Planning
-├── Requirement Analysis
-├── UI/UX Design
-└── Database Design
+## 🚀 Getting Started
 
-        ↓
+```bash
+# Clone the repo
+git clone https://github.com/your-username/future-scope-platform.git
+cd future-scope-platform
 
-Phase 2
-│
-├── Frontend Development (React + Vite)
-├── Backend Development (Python + FastAPI)
-├── Authentication
-└── Database Integration
+# Backend setup
+cd backend
+python -m venv venv
+source venv/bin/activate      # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn app:app --reload
 
-        ↓
+# Frontend setup (in a new terminal)
+cd frontend
+npm install
+npm run dev
+```
 
-Phase 3
-│
-├── AI Helper Development
-├── Personal Tutor Agent
-├── Coding Mentor Agent
-├── Assignment Helper Agent
-├── Quiz Generator Agent
-├── Placement Preparation Agent
-├── Resume Review Agent
-├── Career Guidance Agent
-└── Attendance Analysis Agent
+---
 
-        ↓
+## 🔑 Environment Variables
 
-Phase 4
-│
-├── Code Generation Agent
-├── Code Review Agent
-├── Debugging Agent
-├── Unit Test Generator
-├── API Documentation Agent
-├── SQL Query Agent
-├── DevOps Agent
-└── GitHub PR Review Agent
+Create a `.env` file in each service directory:
 
-        ↓
+```env
+DATABASE_URL=postgresql://user:password@host:port/dbname
+JWT_SECRET_KEY=your_secret_key
+AI_API_KEY=your_ai_provider_key
+STORAGE_BUCKET_URL=your_storage_url
+```
 
-Phase 5
-│
-├── Resume Screening Agent
-├── Candidate Matching Agent
-├── Mock Interview Agent
-├── Skill Gap Analysis Agent
-├── Coding Evaluation Agent
-└── Communication Assessment Agent
+---
 
-        ↓
+## ☁️ Deployment
 
-Phase 6
-│
-├── Employee Onboarding Agent
-├── Leave Management Agent
-├── Policy Q&A Agent
-├── Payroll Support Agent
-└── Employee Feedback Agent
+| Component | Platform |
+|---|---|
+| Frontend | Vercel |
+| Backend | Render |
+| Database | PostgreSQL (managed) |
+| Source Control | GitHub |
+| Containerization | Docker |
 
-        ↓
+---
 
-Phase 7
-│
-├── Student Helpdesk Agent
-├── Timetable Assistant
-├── Lab Booking Agent
-├── Placement Coordinator Agent
-├── Event Registration Agent
-├── Library Assistant Agent
-├── Hostel Management Agent
-└── Fee Inquiry Agent
+## 🔐 Security
 
-        ↓
+- JWT-based authentication with role-based access control
+- Input validation on every endpoint
+- Protection against SQL injection & XSS
+- Environment-based secrets (never committed to source)
 
-Phase 8
-│
-├── Testing
-├── Bug Fixing
-├── Performance Optimization
-├── Security
-└── Documentation
+---
 
-        ↓
+## 🤝 Contributing
 
-Phase 9
-│
-├── GitHub
-├── Docker
-├── Render (Backend)
-├── Vercel (Frontend)
-├── PostgreSQL Database
-└── Production Deployment
+1. Fork the repo
+2. Create a feature branch: `git checkout -b feature/agent-name`
+3. Commit your changes
+4. Open a Pull Request — the **GitHub PR Review Agent** will take a first pass 👀
 
-and this
+---
 
-Frontend Development
-│
-├── Requirement Analysis
-├── UI/UX Design (Figma)
-├── Create React + Vite Project
-├── Install Tailwind CSS
-├── Create Reusable Components
-├── Develop Authentication Pages
-├── Develop Dashboard
-├── Create AI Helper Interface
-├── Develop AI Agent Pages
-├── Integrate REST APIs
-├── File Upload Module
-├── Responsive Design
-├── Testing & Bug Fixing
-└── Deploy to Vercel
+## 📊 Roadmap Status Tracker
 
+| Milestone | Status |
+|---|---|
+| Planning & Requirements | ✅ Done |
+| Backend Core Setup | 🔄 In Progress |
+| Frontend Dashboards | ⏳ Pending |
+| AI Agent Integration | ⏳ Pending |
+| Security Hardening | ⏳ Pending |
+| Production Deployment | ⏳ Pending |
 
-Backend Development
-│
-├── Requirement Analysis
-├── Create FastAPI Project
-├── Configure Virtual Environment
-├── Install Required Libraries
-├── Database Design (PostgreSQL/SQLite)
-├── Create Database Models
-├── Implement JWT Authentication
-├── Develop REST APIs
-├── Develop AI Helper Service
-├── Implement AI Agents
-├── File Upload & Processing
-├── API Testing
-├── Performance Optimization
-├── Security Implementation
-└── Deploy to Render/AWS
+---
 
-AI Agent Development
-│
-├── AI Helper
-├── Personal Tutor Agent
-├── Coding Mentor Agent
-├── Assignment Helper Agent
-├── Quiz Generator Agent
-├── Placement Preparation Agent
-├── Resume Review Agent
-├── Career Guidance Agent
-├── Attendance Analysis Agent
-├── Code Generation Agent
-├── Code Review Agent
-├── Debugging Agent
-├── Unit Test Generator
-├── API Documentation Agent
-├── SQL Query Agent
-├── DevOps Agent
-├── GitHub Pull Request Review Agent
-├── Resume Screening Agent
-├── Candidate Matching Agent
-├── Mock Interview Agent
-├── Skill Gap Analysis Agent
-├── Coding Evaluation Agent
-├── Communication Assessment Agent
-├── Employee Onboarding Agent
-├── Leave Management Agent
-├── Policy Q&A Agent
-├── Payroll Support Agent
-├── Employee Feedback Agent
-├── Student Helpdesk Agent
-├── Timetable Assistant
-├── Lab Booking Agent
-├── Placement Coordinator Agent
-├── Event Registration Agent
-├── Library Assistant Agent
-├── Hostel Management Agent
-└── Fee Inquiry Agent
+<div align="center">
 
-Deployment Process
-│
-├── Push Source Code to GitHub
-├── Deploy Frontend (Vercel)
-├── Deploy Backend (Render)
-├── Configure PostgreSQL Database
-├── Configure Cloud Storage
-├── Connect Frontend & Backend
-├── Configure Environment Variables
-├── Enable HTTPS
-├── Test on Desktop
-├── Test on Laptop
-├── Test on Android
-├── Test on iPhone
-└── Production Release
+**Built for learners, recruiters, educators, and engineers — all in one place.**
 
-
-Planning
-    │
-    ▼
-Frontend Development
-    │
-    ▼
-Backend Development
-    │
-    ▼
-AI Agent Development
-    │
-    ▼
-Database Integration
-    │
-    ▼
-API Integration
-    │
-    ▼
-Testing
-    │
-    ▼
-Deployment
-    │
-    ▼
-Accessible from Any Device
-(Desktop • Laptop • Tablet • Mobile)
+</div>
