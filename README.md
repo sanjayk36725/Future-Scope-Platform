@@ -156,9 +156,10 @@ flowchart TD
 | Design | Figma |
 
 ---
+
 ## Roadmap
 
-​```mermaid
+```mermaid
 flowchart TD
     P0["0 · Planning"] --> P1["1 · Backend Core"]
     P1 --> P2["2 · Auth & RBAC"]
@@ -171,7 +172,7 @@ flowchart TD
     P8 --> P9["9 · Future Scope"]
     P9 --> P10["10 · Testing"]
     P10 --> P11["11 · Maintenance"]
-​```
+```
 
 | Phase | Focus |
 |---|---|
@@ -291,10 +292,10 @@ STORAGE_BUCKET_URL=your_storage_url
 |---|---|
 | Planning & Requirements | ✅ Done |
 | Backend Core Setup | ✅ Done |
-| Frontend Dashboards | ✅ Done  |
-| AI Agent Integration | ✅ Done |
-| Security Hardening |  ✅ Done  |
-| Production Deployment | ✅ Done |
+| Frontend Dashboards |  ✅ Done  |
+| AI Agent Integration |  ✅ Done  |
+| Security Hardening | ✅ Done  |
+| Production Deployment |  ✅ Done  |
 
 ---
 
