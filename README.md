@@ -156,11 +156,10 @@ flowchart TD
 | Design | Figma |
 
 ---
-
 ## Roadmap
 
-```mermaid
-flowchart LR
+​```mermaid
+flowchart TD
     P0["0 · Planning"] --> P1["1 · Backend Core"]
     P1 --> P2["2 · Auth & RBAC"]
     P2 --> P3["3 · Frontend UI"]
@@ -172,7 +171,7 @@ flowchart LR
     P8 --> P9["9 · Future Scope"]
     P9 --> P10["10 · Testing"]
     P10 --> P11["11 · Maintenance"]
-```
+​```
 
 | Phase | Focus |
 |---|---|
