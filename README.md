@@ -1,85 +1,98 @@
 <div align="center">
 
-# 🌐 Future Scope Platform
+# ⚡ F U T U R E S C O P E ⚡
+### `[ NEXT-GEN AI ECOSYSTEM // STUDENTS · HR · TEACHERS · MANAGERS ]`
 
-### *A unified, AI-powered ecosystem for Students, HR, Teachers & Managers*
+```
+ ██████╗ ██╗   ██╗████████╗██╗   ██╗██████╗ ███████╗
+██╔════╝ ██║   ██║╚══██╔══╝██║   ██║██╔══██╗██╔════╝
+██║  ███╗██║   ██║   ██║   ██║   ██║██████╔╝█████╗
+██║   ██║██║   ██║   ██║   ██║   ██║██╔══██╗██╔══╝
+╚██████╔╝╚██████╔╝   ██║   ╚██████╔╝██║  ██║███████╗
+ ╚═════╝  ╚═════╝    ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝
+        S  C  O  P  E   //   v0.1.0-alpha
+```
 
-[![Status](https://img.shields.io/badge/status-in%20development-yellow)]()
-[![Frontend](https://img.shields.io/badge/frontend-React%20%2B%20Vite-61DAFB?logo=react&logoColor=black)]()
-[![Backend](https://img.shields.io/badge/backend-FastAPI-009688?logo=fastapi&logoColor=white)]()
-[![Database](https://img.shields.io/badge/database-PostgreSQL-336791?logo=postgresql&logoColor=white)]()
-[![Deployment](https://img.shields.io/badge/deploy-Vercel%20%2B%20Render-black?logo=vercel)]()
-[![License](https://img.shields.io/badge/license-MIT-green)]()
+[![Status](https://img.shields.io/badge/STATUS-ONLINE_%E2%9A%A1-39FF14?style=for-the-badge&labelColor=0d0d0d)]()
+[![Frontend](https://img.shields.io/badge/UI-React_%2B_Vite-00F0FF?style=for-the-badge&logo=react&logoColor=black&labelColor=0d0d0d)]()
+[![Backend](https://img.shields.io/badge/CORE-FastAPI-FF00E4?style=for-the-badge&logo=fastapi&logoColor=white&labelColor=0d0d0d)]()
+[![Database](https://img.shields.io/badge/DATA-PostgreSQL-00F0FF?style=for-the-badge&logo=postgresql&logoColor=white&labelColor=0d0d0d)]()
+[![Agents](https://img.shields.io/badge/AI_AGENTS-36_DEPLOYED-FFD700?style=for-the-badge&labelColor=0d0d0d)]()
+[![License](https://img.shields.io/badge/LICENSE-MIT-39FF14?style=for-the-badge&labelColor=0d0d0d)]()
 
-*One platform. Four roles. Thirty-six AI agents.*
+**`>> ONE PLATFORM. FOUR ROLES. THIRTY-SIX AI AGENTS. ZERO LIMITS. <<`**
 
 </div>
 
 ---
 
-## 📖 Table of Contents
+## 🛰️ TRANSMISSION LOG
 
-- [What Is This?](#-what-is-this)
-- [Core Roles](#-core-roles)
-- [Architecture at a Glance](#-architecture-at-a-glance)
-- [AI Agent Suite](#-ai-agent-suite)
-- [Tech Stack](#-tech-stack)
-- [Roadmap](#-roadmap)
-- [Repository Structure](#-repository-structure)
-- [Getting Started](#-getting-started)
-- [Environment Variables](#-environment-variables)
-- [Deployment](#-deployment)
-- [Security](#-security)
-- [Contributing](#-contributing)
-- [Roadmap Status Tracker](#-roadmap-status-tracker)
-
----
-
-## 🎯 What Is This?
-
-**Future Scope Platform** connects four kinds of people — **Students**, **HR Professionals**, **Teachers**, and **Software Managers** — inside one role-aware web application, and backs each of them with a dedicated bench of purpose-built AI agents.
-
-> Think of it as a campus + workplace operating system, where every role gets its own dashboard, its own tools, and its own AI copilots.
+- [◈ System Overview](#-system-overview)
+- [◈ Access Roles](#-access-roles)
+- [◈ Neural Architecture](#-neural-architecture)
+- [◈ Agent Roster](#-agent-roster)
+- [◈ Tech Stack](#-tech-stack)
+- [◈ Deployment Timeline](#-deployment-timeline)
+- [◈ Directory Map](#-directory-map)
+- [◈ Boot Sequence](#-boot-sequence)
+- [◈ Config Variables](#-config-variables)
+- [◈ Hosting Grid](#-hosting-grid)
+- [◈ Defense Protocols](#-defense-protocols)
+- [◈ Join the Build](#-join-the-build)
+- [◈ Mission Control](#-mission-control)
 
 ---
 
-## 👥 Core Roles
+## 🌌 SYSTEM OVERVIEW
 
-| Role | What They Do | Key Modules |
+> **FUTURESCOPE** is not a dashboard. It's an operating layer for how people learn, hire, teach, and ship — powered by a swarm of 36 purpose-built AI agents working behind a single, role-aware interface.
+
+Four kinds of users. One neural backbone. Every session is personalized, every workflow is AI-augmented, every role gets its own command center.
+
+```
+   [ USER ENTERS ] ──▶ [ ROLE DETECTED ] ──▶ [ AGENTS ACTIVATE ] ──▶ [ INSIGHT DELIVERED ]
+```
+
+---
+
+## 👤 ACCESS ROLES
+
+| ⟨ ROLE ⟩ | ⟨ MISSION ⟩ | ⟨ POWERED BY ⟩ |
 |---|---|---|
-| 🎓 **Student** | Learn, submit work, track progress | Tutor Agent, Assignment Helper, Quiz Generator, Placement Prep |
-| 💼 **HR Professional** | Recruit, screen, onboard | Resume Screening, Candidate Matching, Mock Interview Agent |
-| 👩‍🏫 **Teacher** | Guide, evaluate, share knowledge | Coding Mentor, Attendance Analysis, Skill Gap Analysis |
-| 🛠️ **Software Manager** | Oversee code quality & delivery | Code Review, DevOps Agent, GitHub PR Review |
+| 🎓 **STUDENT** | Learn faster, ship assignments, level up | Tutor Agent · Assignment Helper · Quiz Generator · Placement Prep |
+| 💼 **HR OPERATIVE** | Source, screen, onboard talent | Resume Screening · Candidate Matching · Mock Interview Agent |
+| 👩‍🏫 **TEACHER** | Guide, evaluate, transmit knowledge | Coding Mentor · Attendance Analysis · Skill Gap Analysis |
+| 🛠️ **MANAGER** | Command code quality & delivery velocity | Code Review · DevOps Agent · GitHub PR Review |
 
 ---
 
-## 🏗️ Architecture at a Glance
+## 🧬 NEURAL ARCHITECTURE
 
 ```
-                        ┌─────────────────────────┐
-                        │   React + Vite (UI)      │
-                        │  Role-based Dashboards    │
-                        └────────────┬─────────────┘
-                                     │ REST / JWT
-                        ┌────────────▼─────────────┐
-                        │   FastAPI Backend         │
-                        │  Auth · RBAC · Routing    │
-                        └────────────┬─────────────┘
-                 ┌───────────────────┼───────────────────┐
-                 │                   │                    │
-        ┌────────▼────────┐ ┌────────▼────────┐ ┌─────────▼────────┐
-        │  PostgreSQL DB   │ │  AI Agent Layer  │ │  File / Storage   │
-        │  Users · Files   │ │  36 Micro-Agents │ │  Uploads · Docs    │
-        └──────────────────┘ └──────────────────┘ └───────────────────┘
+                    ┌──────────────────────────────┐
+                    │   ⬡ REACT + VITE  ⬡           │
+                    │   Role-Aware HUD Dashboards    │
+                    └───────────────┬────────────────┘
+                                    │  REST // JWT
+                    ┌───────────────▼────────────────┐
+                    │   ⬡ FASTAPI CORE  ⬡             │
+                    │   Auth · RBAC · Signal Routing  │
+                    └───────────────┬────────────────┘
+          ┌─────────────────────────┼─────────────────────────┐
+          │                         │                          │
+ ┌────────▼─────────┐    ┌──────────▼──────────┐   ┌───────────▼──────────┐
+ │  ⬡ POSTGRESQL ⬡   │    │  ⬡ AI AGENT SWARM ⬡  │   │  ⬡ STORAGE GRID ⬡     │
+ │  Users · Records   │    │  36 Micro-Agents     │   │  Uploads · Documents  │
+ └───────────────────┘    └──────────────────────┘   └───────────────────────┘
 ```
 
 ---
 
-## 🤖 AI Agent Suite
+## 🤖 AGENT ROSTER
 
 <details>
-<summary><b>🎓 Learning & Career (8 agents)</b></summary>
+<summary><b>🎓 LEARNING & CAREER — 8 UNITS</b></summary>
 
 - Personal Tutor Agent
 - Coding Mentor Agent
@@ -93,7 +106,7 @@
 </details>
 
 <details>
-<summary><b>💻 Software Engineering (8 agents)</b></summary>
+<summary><b>💻 SOFTWARE ENGINEERING — 8 UNITS</b></summary>
 
 - Code Generation Agent
 - Code Review Agent
@@ -107,7 +120,7 @@
 </details>
 
 <details>
-<summary><b>💼 HR & Recruitment (6 agents)</b></summary>
+<summary><b>💼 HR & RECRUITMENT — 6 UNITS</b></summary>
 
 - Resume Screening Agent
 - Candidate Matching Agent
@@ -119,7 +132,7 @@
 </details>
 
 <details>
-<summary><b>🏢 Workplace Operations (5 agents)</b></summary>
+<summary><b>🏢 WORKPLACE OPERATIONS — 5 UNITS</b></summary>
 
 - Employee Onboarding Agent
 - Leave Management Agent
@@ -130,7 +143,7 @@
 </details>
 
 <details>
-<summary><b>🏫 Campus Services (8 agents)</b></summary>
+<summary><b>🏫 CAMPUS SERVICES — 8 UNITS</b></summary>
 
 - Student Helpdesk Agent
 - Timetable Assistant
@@ -143,50 +156,50 @@
 
 </details>
 
-**Total: 35 specialized agents + 1 general AI Helper = 36 in the roster.**
+**`>> TOTAL: 35 SPECIALIZED AGENTS + 1 GENERAL AI HELPER = 36-UNIT SWARM <<`**
 
 ---
 
-## ⚙️ Tech Stack
+## ⚙️ TECH STACK
 
-| Layer | Technology |
+| ⟨ LAYER ⟩ | ⟨ TECHNOLOGY ⟩ |
 |---|---|
-| Frontend | React + Vite, Tailwind CSS |
-| Backend | Python, FastAPI |
-| Auth | JWT-based session management |
-| Database | PostgreSQL (prod) / SQLite (dev) |
-| Storage | Cloud file storage for uploads |
-| Deployment | Vercel (frontend) · Render (backend) · Docker |
-| Design | Figma |
+| Interface | React + Vite, Tailwind CSS |
+| Core Engine | Python, FastAPI |
+| Identity | JWT-based session management |
+| Data Vault | PostgreSQL (prod) / SQLite (dev) |
+| Storage | Cloud object storage for uploads |
+| Deploy Grid | Vercel (frontend) · Render (backend) · Docker |
+| Design Lab | Figma |
 
 ---
 
-## 🗺️ Roadmap
+## 🗺️ DEPLOYMENT TIMELINE
 
 ```
-Planning ─▶ Frontend ─▶ Backend ─▶ AI Agents ─▶ DB Integration
-   ─▶ API Integration ─▶ Testing ─▶ Deployment
-   ─▶ Accessible on Desktop · Laptop · Tablet · Mobile
+[PLANNING] ▸ [FRONTEND] ▸ [BACKEND] ▸ [AI AGENTS] ▸ [DB SYNC]
+   ▸ [API LINK] ▸ [TESTING] ▸ [LAUNCH]
+   ▸ CROSS-PLATFORM :: Desktop · Laptop · Tablet · Mobile
 ```
 
-| Phase | Focus |
+| PHASE | FOCUS |
 |---|---|
-| 0 | Planning & requirement analysis |
-| 1 | Core backend + database setup |
-| 2 | Authentication & role-based access |
-| 3 | Frontend UI & role dashboards |
-| 4 | Collaboration, HR & student features |
-| 5 | Notifications, search, profiles |
-| 6 | Deployment (GitHub → Render) |
-| 7 | Security hardening (JWT, XSS/SQLi prevention) |
-| 8 | Performance & caching |
-| 9 | Future scope — AI recommendations, chat, mobile app |
+| 00 | Planning & requirement analysis |
+| 01 | Core backend + database setup |
+| 02 | Authentication & role-based access |
+| 03 | Frontend UI & role dashboards |
+| 04 | Collaboration, HR & student features |
+| 05 | Notifications, search, profiles |
+| 06 | Deployment (GitHub → Render) |
+| 07 | Security hardening (JWT, XSS/SQLi prevention) |
+| 08 | Performance & caching |
+| 09 | Future scope — AI recommendations, chat, mobile app |
 | 10 | Testing (unit + integration) |
 | 11 | Maintenance & continuous feedback |
 
 ---
 
-## 📁 Repository Structure
+## 📁 DIRECTORY MAP
 
 ```
 AI-Agents/
@@ -202,31 +215,31 @@ AI-Agents/
 ├── Code-Generation-Agent/
 ├── Code-Review-Agent/
 ├── Debugging-Agent/
-├── ... (36 agents total, each self-contained)
+├── ... [ 36 AGENTS TOTAL — EACH SELF-CONTAINED ]
 │   ├── app.py
 │   ├── requirements.txt
 │   └── README.md
 ```
 
-Each agent is an isolated micro-service with its own `app.py` and `requirements.txt`, so agents can be developed, tested, and deployed independently.
+Each agent is an isolated micro-service — its own `app.py`, its own `requirements.txt` — built, tested, and deployed independently.
 
 ---
 
-## 🚀 Getting Started
+## 🚀 BOOT SEQUENCE
 
 ```bash
-# Clone the repo
+# >> CLONE THE REPO
 git clone https://github.com/your-username/future-scope-platform.git
 cd future-scope-platform
 
-# Backend setup
+# >> IGNITE BACKEND
 cd backend
 python -m venv venv
 source venv/bin/activate      # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 uvicorn app:app --reload
 
-# Frontend setup (in a new terminal)
+# >> IGNITE FRONTEND (new terminal)
 cd frontend
 npm install
 npm run dev
@@ -234,7 +247,7 @@ npm run dev
 
 ---
 
-## 🔑 Environment Variables
+## 🔑 CONFIG VARIABLES
 
 Create a `.env` file in each service directory:
 
@@ -247,9 +260,9 @@ STORAGE_BUCKET_URL=your_storage_url
 
 ---
 
-## ☁️ Deployment
+## ☁️ HOSTING GRID
 
-| Component | Platform |
+| COMPONENT | PLATFORM |
 |---|---|
 | Frontend | Vercel |
 | Backend | Render |
@@ -259,7 +272,7 @@ STORAGE_BUCKET_URL=your_storage_url
 
 ---
 
-## 🔐 Security
+## 🔐 DEFENSE PROTOCOLS
 
 - JWT-based authentication with role-based access control
 - Input validation on every endpoint
@@ -268,30 +281,31 @@ STORAGE_BUCKET_URL=your_storage_url
 
 ---
 
-## 🤝 Contributing
+## 🤝 JOIN THE BUILD
 
 1. Fork the repo
 2. Create a feature branch: `git checkout -b feature/agent-name`
 3. Commit your changes
-4. Open a Pull Request — the **GitHub PR Review Agent** will take a first pass 👀
+4. Open a Pull Request — the **GitHub PR Review Agent** scans it first 👁️
 
 ---
 
-## 📊 Roadmap Status Tracker
+## 📊 MISSION CONTROL
 
-| Milestone | Status |
+| MILESTONE | STATUS |
 |---|---|
-| Planning & Requirements | ✅ Done |
-| Backend Core Setup | 🔄 In Progress |
-| Frontend Dashboards | ⏳ Pending |
-| AI Agent Integration | ⏳ Pending |
-| Security Hardening | ⏳ Pending |
-| Production Deployment | ⏳ Pending |
+| Planning & Requirements | 🟢 ONLINE |
+| Backend Core Setup | 🟡 IN PROGRESS |
+| Frontend Dashboards | ⚪ STANDBY |
+| AI Agent Integration | ⚪ STANDBY |
+| Security Hardening | ⚪ STANDBY |
+| Production Deployment | ⚪ STANDBY |
 
 ---
 
 <div align="center">
 
-**Built for learners, recruiters, educators, and engineers — all in one place.**
+### `[ BUILT FOR LEARNERS · RECRUITERS · EDUCATORS · ENGINEERS ]`
+### `[ ALL SYSTEMS. ONE PLATFORM. FUTURE SCOPE. ]`
 
 </div>
